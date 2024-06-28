@@ -1,40 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Let's Talk
 
-## Getting Started
+Let's Talk is a video conferencing application that supports multiple users simultaneously. It is optimized for the best performance using Peer-to-Peer (P2P) connections with Mesh SFU over TCP networking and WebRTC, along with socket support for linking. The application generates unique IDs using UUID and features a simple, functional UI.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Multiple Users**: Supports multiple participants in a single meeting.
+- **Best Performance**: Optimized for P2P connections using Mesh SFU over TCP.
+- **WebRTC Integration**: Utilizes WebRTC for real-time communication.
+- **Socket Support**: Employs sockets for linking and communication.
+- **UUID for IDs**: Generates unique IDs for sessions using UUID.
+- **Simple UI**: Focused on functionality with a straightforward and easy-to-use interface.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    ```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Usage
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Create a new meeting or join an existing one by entering a valid meeting ID.
+- Share the meeting ID with other participants to join the session.
+- Enjoy real-time video and audio communication with multiple users.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Frontend**: Next.js
+- **Backend**: Node.js
+- **Real-Time Communication**: WebRTC, Socket.io
+- **Networking**: Mesh SFU over TCP
+- **ID Generation**: UUID
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+We welcome contributions to enhance the features and improve the performance of Let's Talk. Please follow these steps to contribute:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Fork the repository.
+2. Create a new branch:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
 
-## Deploy on Vercel
+3. Make your changes and commit them:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    git commit -m 'Add some feature'
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Push to the branch:
+
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+
+5. Open a pull request.
+
+## Acknowledgements
+
+- Inspiration from Google Meet.
+- Built using WebRTC, Socket.io, and UUID.
+
