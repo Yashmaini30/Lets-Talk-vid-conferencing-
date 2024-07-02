@@ -21,6 +21,7 @@ const Player = (props) => {
           playing={playing}
           width="100%"
           height="100%"
+          className ={styles.mirroredVideo}
         />
       ) : (
         <UserSquare2 className={styles.user} size={isActive ? 400 : 150} />
